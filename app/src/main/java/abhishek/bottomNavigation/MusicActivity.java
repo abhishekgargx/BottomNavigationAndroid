@@ -2,12 +2,10 @@ package abhishek.bottomNavigation;
 
 import android.os.Bundle;
 
-public class HomeActivity extends BaseActivity {
-
-
+public class MusicActivity extends  BaseActivity{
     @Override
     int getContentViewId() {
-        return R.layout.activity_home;
+        return R.layout.activity_music;
     }
 
     @Override
@@ -21,6 +19,4 @@ public class HomeActivity extends BaseActivity {
         // do not use setContentView(R.id.activity_home) only pass it in getContentViewId();
 
     }
-
-
 }
