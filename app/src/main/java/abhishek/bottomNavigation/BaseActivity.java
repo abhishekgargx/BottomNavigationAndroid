@@ -16,7 +16,7 @@ public abstract class BaseActivity extends AppCompatActivity implements BottomNa
         super.onCreate(savedInstanceState);
         setContentView(getContentViewId());
 
-        navigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        navigationView = findViewById(R.id.navigation);
         navigationView.setOnNavigationItemSelectedListener(this);
     }
 
@@ -35,17 +35,26 @@ public abstract class BaseActivity extends AppCompatActivity implements BottomNa
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        navigationView.postDelayed(() -> {
-            int itemId = item.getItemId();
-            if (itemId == R.id.navigation_home) {
-                startActivity(new Intent(this, HomeActivity.class));
-            } else if (itemId == R.id.navigation_dashboard) {
+
+            switch (item.getItemId()){
+                case R.id.navigation_home:{
+                    startActivity(new Intent(this, HomeActivity.class));
+                    break;
+                }
+                case R.id.navigation_dashboard:{
                     startActivity(new Intent(this, DashboardActivity.class));
-            } else if (itemId == R.id.navigation_notifications) {
+                    break;
+                }
+                case R.id.navigation_notifications:{
                     startActivity(new Intent(this, NotificationsActivity.class));
+                    break;
+                }
+                case R.id.navigation_music:{
+                    startActivity(new Intent(this, MusicActivity.class));
+                    break;
+                }
             }
-            finish();
-        }, 300);
+            //finish()
         return true;
     }
 

@@ -10,7 +10,7 @@ public class MusicActivity extends  BaseActivity{
 
     @Override
     int getNavigationMenuItemId() {
-        return R.id.navigation_home;
+        return R.id.navigation_music;
     }
 
     @Override

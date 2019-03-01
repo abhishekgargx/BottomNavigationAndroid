@@ -1,5 +1,7 @@
 package abhishek.bottomNavigation;
 
+import android.os.Bundle;
+
 public class NotificationsActivity extends BaseActivity {
 
 
@@ -11,5 +13,10 @@ public class NotificationsActivity extends BaseActivity {
     @Override
     int getNavigationMenuItemId() {
         return R.id.navigation_notifications;
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 }
