@@ -50,4 +50,5 @@ This is not library it is code sample of demo app, which uses 4 activites and na
 
 # Tip: 
 - clone this project first and then read whole implementation and working of code, complie in on your mobile then use it in your project.
+- i put some styles of bottom navigation you can further configure it as per needs and can apply directly to bottom navigation element using property `style=@style/bottomNavigation`.
 
