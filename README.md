@@ -4,9 +4,11 @@ This is not library it is code sample of demo app, which uses 4 activites and na
 
 
 
-Problem : How to use activites with bottom navigation android, as it is always be used with fragments ?
+# Problem : 
+- How to use activites with bottom navigation android, as it is always be used with fragments ?
 
-Solution : there are two solutions for above problem -
+# Solution : 
+- there are two solutions for above problem
 
         **************************************************************************************************************************
         Solution 1:  Put bottom navigation bottom click listener and logic of implementation in every
@@ -31,10 +33,12 @@ Solution : there are two solutions for above problem -
 
         *********************************************************************************************************************************
 
-#conclusion : 
--we got solution of problem and two methods to apporch problem, i personally used second solution as bottom navigation logic stays in seprate file and easy to manage and implement.
+# conclusion : 
 
-#Usage :
+- we got solution of problem and two methods to apporch problem, i personally used second solution as bottom navigation logic stays in seprate file and easy to manage and implement.
+
+# Usage :
+
 - make seperate bottom navigation element.
 - Make BaseActivity which extends AppCompactActivity
 - Make two abstract methods one for get current layout value , another to get action name in bottom navigation.
@@ -42,8 +46,8 @@ Solution : there are two solutions for above problem -
 - now extend BaseActivity in HomeActivity
 - implement both abstract methods of BaseAcitivity in HomeActivity
 - Make sure to do not use method setContentView in HomeActivity, instead of pass your xml name to baseAcitity
+- You can find both HomeActivity and BaseActivity with working sample code (modify it as per you requirements).
 
-You can find both HomeActivity and BaseActivity with working sample code (modify it as per you requirements).
-
-Tip: clone this project first and then read whole implementation and working of code, complie in on your mobile then use it in your project.
+# Tip: 
+- clone this project first and then read whole implementation and working of code, complie in on your mobile then use it in your project.
 
