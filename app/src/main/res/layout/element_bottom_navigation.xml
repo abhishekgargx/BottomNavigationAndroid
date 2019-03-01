@@ -3,10 +3,13 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/navigation"
+        app:labelVisibilityMode="labeled"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/windowBackground"
         app:menu="@menu/navigation"
         />
 
+    <!-- this will help you make lable alawys visible but only works with 'com.android.support:design:28.0.0'-->
+    <!--app:labelVisibilityMode="labeled"-->
 
